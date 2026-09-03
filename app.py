@@ -53,7 +53,7 @@ def buscar_codigo_iata(nome_lugar):
     resultados = response.json()
 
     if not resultados:
-        # return None
+        return None
 
     # Se só encontrou uma cidade, já retorna direto, sem perguntar nada
     if len(resultados) == 1:
